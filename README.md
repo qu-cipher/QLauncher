@@ -9,6 +9,7 @@ This project isn't 100% complete yet, that's because we didn't create a release.
 * Java version downloader
 * Mod support (Forge, NeoForge, Fabric)
 * Server runner support (for servers)
+* Decompiler and Modder (For registered developers)
 
 ## License
 This project is open for everyone, just for debugging and improvements.
