@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ir.qcipher.qlauncher.controllers.InstanceManagerController">
+   <children>
+      <TabPane fx:id="tabPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="314.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE">
+         <tabs>
+            <Tab text="Release">
+               <content>
+                  <Pane prefHeight="200.0" prefWidth="600.0">
+                     <children>
+                        <ListView fx:id="releases" layoutX="20.0" layoutY="14.0" prefHeight="250.0" prefWidth="560.0" />
+                     </children>
+                  </Pane>
+               </content>
+            </Tab>
+            <Tab text="Snapshot">
+               <content>
+                  <Pane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <ListView fx:id="snapshots" layoutX="20.0" layoutY="14.0" prefHeight="250.0" prefWidth="560.0" />
+                     </children>
+                  </Pane>
+               </content>
+            </Tab>
+            <Tab text="Other">
+               <content>
+                  <Pane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <ListView fx:id="other" layoutX="20.0" layoutY="14.0" prefHeight="250.0" prefWidth="560.0" />
+                     </children>
+                  </Pane>
+               </content>
+            </Tab>
+         </tabs>
+      </TabPane>
+      <HBox alignment="CENTER" layoutX="159.0" layoutY="314.0" prefHeight="55.0" prefWidth="283.0">
+         <children>
+            <Button fx:id="install" mnemonicParsing="false" prefWidth="100.0" text="Install" disable="true" />
+            <Separator prefHeight="1.0" prefWidth="30.0" />
+            <Button fx:id="fix" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefWidth="100.0" text="Fix" disable="true" />
+            <Separator layoutX="111.0" layoutY="30.0" prefHeight="1.0" prefWidth="30.0" disable="true" />
+            <Button fx:id="remove" layoutX="62.0" layoutY="10.0" mnemonicParsing="false" prefWidth="100.0" text="Remove" disable="true" />
+         </children>
+      </HBox>
+   </children>
+</Pane>
